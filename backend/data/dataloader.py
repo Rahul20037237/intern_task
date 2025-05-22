@@ -7,7 +7,7 @@ from typing import List, Dict, Any
 
 import tiktoken
 from .ocr_extract import OCRTextExtractor
-from ..app.core.cache import CacheMemory
+from ..app.core.cache_cls import CacheMemory
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s | %(levelname)s | %(message)s')
 logger = logging.getLogger(__name__)
