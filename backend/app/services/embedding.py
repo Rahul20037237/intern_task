@@ -1,6 +1,5 @@
 import os
 import hashlib
-import logging
 from typing import List, Dict, Any
 
 from langchain.schema import Document
@@ -107,3 +106,4 @@ class EmbeddingService:
         except Exception as e:
             logger.error(f"Failed to build and save vectorstore: {e}")
             raise
+

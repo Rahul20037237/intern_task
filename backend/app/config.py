@@ -4,7 +4,7 @@ from pydantic_settings import BaseSettings
 from pydantic import SecretStr, Field, ValidationError
 
 class Settings(BaseSettings):
-    OPENAI_API_KEY: SecretStr= Field(..., env="OPENAI_API_KEY")
+    HUGGING_FACE_KEY: SecretStr= Field(..., env="HUGGING_FACE_KEY")
     VECTOR_DB_PATH: str = Field(default="vector_db", env="VECTOR_DB_PATH")
     MAX_TOKENS_PER_CHUNK: int = Field(default=500, env="MAX_TOKENS_PER_CHUNK")
     MODEL_NAME: str = Field(default="text-embedding-3-small", env="EMBEDDING_MODEL")
