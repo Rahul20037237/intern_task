@@ -8,6 +8,7 @@ pytesseract
 pdfplumber
 Pillow
 chromadb
+sqlmodel
 langchain_chroma
 python-dotenv
 aiofiles
