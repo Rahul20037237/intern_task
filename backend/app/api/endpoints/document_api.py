@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from  fastapi import  APIRouter,File,UploadFile
 @dataclass
 class DocumentApi:
-     Doc_db:
+     Doc_db:str
      router: APIRouter
      prefix:str="/api/documents"
      tags=["Documents"]

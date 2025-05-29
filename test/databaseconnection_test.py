@@ -15,7 +15,6 @@ class MyTestCase(unittest.TestCase):
         db_path = "test.pdf"
         with open(file_path, 'rb') as f:
             file_data = f.read()
-
         upload_url = f'{settings.SUPABASE_URL}/storage/v1/object/{settings.BUCKET_NAME}/{db_path}'
 
         response = requests.put(upload_url, headers=self.headers, data=file_data)
