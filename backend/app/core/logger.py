@@ -11,6 +11,8 @@ def setup_logger(
     max_bytes: int = 5 * 1024 * 1024,  # 5 MB
     backup_count: int = 3
 ) -> logging.Logger:
+
+
     logger = logging.getLogger(name)
     logger.setLevel(log_level)
 

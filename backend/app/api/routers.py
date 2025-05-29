@@ -1,5 +1,5 @@
 from  fastapi import  FastAPI
-from .endpoints.document_api import MainApi
+from .endpoints.query_api import MainApi
 from ..models.api_models import *
 app = FastAPI()
 

@@ -15,6 +15,7 @@ class ThemeAPI(SQLModel, table=True):
 
 class DocumentAPI(SQLModel, table=True):
     Document_ID: str = Field(default=None, primary_key=True, regex=r'^DOC[0-9]{1,2}$')
+    Document_name: str = Field(..., regex=r'^Theme [0-9]{1,2}[\w\W\s\S]*$')
     answer: str
     citation: str = Field(nullable=False)
     Query_relation: str = Field(..., regex=r'^Query [0-9]{1,2}$')
