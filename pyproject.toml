@@ -1,0 +1,41 @@
+[project]
+name = "intern-task"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Rahul A", email = "rahul72372003@gmail.com"}
+]
+package-mode = false
+readme = "README.md"
+requires-python = ">=3.9,<4.0"
+dependencies = [
+    "fastapi==0.115.9",                  # Required by chromadb
+    "uvicorn==0.34.2",
+    "langchain-core==0.3.63",
+    "langgraph==0.4.7",
+    "tiktoken==0.9.0",
+    "openai==1.82.1",
+    "pytesseract==0.3.13",
+    "pdfplumber==0.11.6",
+    "pillow==11.2.1",
+    "chromadb==1.0.11",
+    "sqlmodel==0.0.24",
+    "langchain-chroma==0.2.4",
+    "python-dotenv==1.1.0",
+    "aiofiles==24.1.0",
+    "supabase==2.15.2",
+    "psycopg2==2.9.10",
+    "python-multipart==0.0.20",
+    "langchain-community==0.3.24",
+    "langchain-huggingface==0.2.0",
+    "langchain==0.3.25",
+    "huggingface-hub==0.32.2",
+    "torch==2.7.0",
+    "torchvision==0.22.0",
+    "torchaudio==2.7.0",
+    "sentence-transformers==4.1.0"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

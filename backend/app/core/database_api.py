@@ -1,9 +1,7 @@
 from dataclasses import dataclass, field
 
-from sqlalchemy import Row, RowMapping
 
 from backend.app.config import settings
-from typing import Dict, Any, Sequence
 import requests
 from supabase import create_client,Client
 

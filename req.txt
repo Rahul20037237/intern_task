@@ -14,6 +14,7 @@ python-dotenv
 aiofiles
 supabase
 psycopg2
+poetry
 python-multipart
 langchain-community
 langchain-huggingface
