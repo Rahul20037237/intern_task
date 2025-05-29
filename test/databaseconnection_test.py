@@ -48,6 +48,8 @@ class MyTestCase(unittest.TestCase):
             self.assertTrue(True)
         else:
             self.fail(response.json())
+    def tes_normal_data(self):
+        normal_data
 
 
 if __name__ == '__main__':
