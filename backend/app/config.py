@@ -8,6 +8,7 @@ class Settings(BaseSettings):
     VECTOR_DB_PATH: str = Field(default="vector_db", env="VECTOR_DB_PATH")
     MAX_TOKENS_PER_CHUNK: int = Field(default=500, env="MAX_TOKENS_PER_CHUNK")
     MODEL_NAME: str = Field(default="text-embedding-3-small", env="EMBEDDING_MODEL")
+    DATABASE_URL:str = Field(default="sqlite:///database.db", env="DATABASE_URL")
     SUPABASE_URL:str=Field(...,env="SUPABASE_URL")
     SUPABASE_KEY:SecretStr=Field(...,enc="SUPABASE_KEY")
     SUPABASE_SERVICE_ROLE_KEY:SecretStr=Field(...,env="SUPABASE_SERVICE_ROLE_KEY")

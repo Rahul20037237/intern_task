@@ -13,6 +13,7 @@ langchain_chroma
 python-dotenv
 aiofiles
 supabase
+psycopg2
 python-multipart
 langchain-community
 langchain-huggingface
